@@ -83,10 +83,3 @@ const reducer = (state = initialState, action) => {
 }
 
 export default reducer;
-
-
-/* const pro = [
-    {name: "Smasung A71 Mobile", description: "Nice smart phone and in budget", price: 350, _id: 1 },
-    {name: "Mop", description: "To clean dirty floor", price: 30, _id: 2 },
-    {name: "Laptop", description: "To make great web-apps", price: 850, _id: 3 },
-] */
