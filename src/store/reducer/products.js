@@ -1,11 +1,7 @@
 import * as actionTypes from '../action/actionType';
 
 const initialState = {
-    products: [
-        {name: "Smasung A71 Mobile", description: "Nice smart phone and in budget", price: 350, _id: 1 },
-        {name: "Mop", description: "To clean dirty floor", price: 30, _id: 2 },
-        {name: "Laptop", description: "To make great web-apps in ReactJs", price: 850, _id: 3 },
-    ],
+    products: [],
 }
 
 function compareNameDSC(a, b) {
@@ -73,6 +69,12 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 products: sortByPriceDSC
+            }
+
+        case actionTypes.FETCH_PRODUCTS_SUCCESS:
+            return {
+                ...state,
+                products: action.productList
             }
         
         default: 

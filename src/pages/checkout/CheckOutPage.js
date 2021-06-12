@@ -38,4 +38,4 @@ const CheckOutPage =  (props) =>{
         </Grid>
     );
 };
-export default CheckOutPage;
+export default React.memo(CheckOutPage);
